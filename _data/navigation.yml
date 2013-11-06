@@ -1,0 +1,16 @@
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Mentors
+  url: /mentors/
+- text: Classes
+  url: /classes/
+- text: Volunteer
+  url: /volunteer/
+# - text: Mission
+  # url: /mission/
+- text: FAQs
+  url: /faqs/
+- text: Contact
+  url: /contact/

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/styles/reset.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <script src="/assets/scripts/h5f.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="social-menu">
+            <li><a href="https://twitter.com/coderdojochi" class="btn-social btn-social-twitter">twitter</a></li>
+            <li><a href="https://facebook.com/coderdojochi" class="btn-social btn-social-facebook">facebook</a></li>
+            <li><a href="https://plus.google.com/101509519991726328259/" class="btn-social btn-social-google-plus">google plus</a></li>
+        </ul>
+
+
+    </div>
+
+    <div class="logo-wrapper">
+        <div class="wrapper">
+            <a href="/"><h1 class="logo">CoderDojoChi</h1></a>
+            <div class="menu-main-container">
+                <ul id="menu-main" class="header-menu">
+                {% for link in site.data.navigation %}
+                    {% assign url = page.url | split: '/' %}
+                    {% assign link_url = link.url | split: '/' %}
+                    <li{% if url[1] == link_url[1] %} class="current-menu-item"{% endif %}><a href="{{link.url}}">{{link.text}}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>

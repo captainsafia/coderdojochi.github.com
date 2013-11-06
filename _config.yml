@@ -1,0 +1,4 @@
+pygments: true
+paginate: 3
+# permalink: pretty
+permalink: /classes/:month-:day-:year/

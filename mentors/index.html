@@ -1,0 +1,19 @@
+---
+layout: page
+title: "CoderDojoChi Mentors"
+---
+
+<article class="post">
+    <div class="mentors">
+    {% for mentor in site.data.mentors %}
+        <div class="mentor">
+            {% if mentor.picture %}
+            <img src="/assets/images/bios/{{ mentor.picture }}.jpg" width="200" alt="{{ mentor.name }} picture" />
+            {% endif %}
+            <h1 class="title">{{ mentor.name }}</h1>
+
+            <p>{{ mentor.bio }}</p>
+        </div>
+    {% endfor %}
+    </div>
+</article>
