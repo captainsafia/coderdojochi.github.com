@@ -3,17 +3,33 @@ layout: page
 title: "CoderDojoChi Mentors"
 ---
 
-<article class="post">
-    <div class="mentors">
-    {% for mentor in site.data.mentors %}
-        <div class="mentor">
-            {% if mentor.picture %}
-            <img src="/assets/images/bios/{{ mentor.picture }}.jpg" width="200" alt="{{ mentor.name }} picture" />
-            {% endif %}
-            <h1 class="title">{{ mentor.name }}</h1>
-
+<div class="mentors">
+{% for mentor_data in site.data.mentors %}
+    {% assign key = mentor_data[0] %}
+    {% assign mentor = mentor_data[1] %}
+    <div class="mentor">
+        <img src="/assets/images/bios/{% if key %}{{ key }}.jpg{% else %}default.png{% endif %}" class="mentor-img" width="400" alt="{{ mentor.name }}'s picture" />
+        <div class="mentor-content">
+            <h3 class="mentor-name">{{ mentor.name }}</h3>
+            <h4 class="mentor-role">{{ mentor.role }}</h4>
             <p>{{ mentor.bio }}</p>
         </div>
-    {% endfor %}
     </div>
-</article>
+{% endfor %}
+</div>
+
+<h2>Helpers</h2>
+<div class="mentors">
+{% for helper_data in site.data.helpers %}
+    {% assign key = helper_data[0] %}
+    {% assign helper = helper_data[1] %}
+    <div class="mentor">
+        <img src="/assets/images/bios/{% if key %}{{ key }}.jpg{% else %}default.png{% endif %}" class="mentor-img" width="400" alt="{{ helper.name }}'s picture." />
+        <div class="mentor-content">
+            <h3 class="mentor-name">{{ helper.name }}</h3>
+            <h4 class="mentor-role">{{ helper.role }}</h4>
+            <p>{{ helper.bio }}</p>
+        </div>
+    </div>
+{% endfor %}
+</div>
