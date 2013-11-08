@@ -5,8 +5,72 @@
                 {% include sidebar.html %}
             </div>
 
-            <div class="main-content">
-                {{ content }}
+            <div class="main-content class">
+                <h1 class="class-title">{{ page.title }}</h1>
+
+                <div class="class-section class-description drop-caps">
+                    {{ content }}
+                </div>
+
+                <div class="class-section class-signup">
+                    <h2>Sign up</h2>
+                    {% if page.students == nill %}
+                    <iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&amp;ref=etckt&amp;v=2" frameborder="0" height="256" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                    {% else %}
+                    <p>Deeply sorry, but the event has already ended. Over <span class="class-student-count">{{page.students}}</span> attended!</p>
+                    {% endif %}
+                </div>
+
+                <div class="class-section class-teacher">
+                    <h2>Teacher</h2>
+                    {% assign mentor = site.data.mentors[page.teacher] %}
+                    <div class="mentors-class">
+                        <div class="mentor">
+                            <img src="/assets/images/bios/{{ page.teacher }}.jpg" width="200" alt="{{ mentor.name }} picture" />
+                            <h3 class="name">{{ mentor.name }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                {% if page.mentors != nill %}
+                <div class="class-section class-mentors">
+                    <h2>Mentors</h2>
+                    <div class="mentors-class">
+                    {% for mentor_key in page.mentors %}
+                        {% assign mentor = site.data.mentors[mentor_key] %}
+                        <div class="mentor">
+                            <img src="/assets/images/bios/{{ mentor_key }}.jpg" width="200" alt="{{ mentor.name }} picture" />
+                            <h3 class="name">{{ mentor.name }}</h3>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.helpers != nill %}
+                <div class="class-section class-mentors">
+                    <h2>Helpers</h2>
+                    <div class="mentors-class">
+                    {% for helper_key in page.helpers %}
+                        {% assign helper = site.data.helpers[helper_key] %}
+                        <div class="mentor">
+                            <img src="/assets/images/bios/{{ helper_key }}.jpg" width="200" alt="{{ helper.name }} picture" />
+                            <h3 class="name">{{ helper.name }}</h3>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.media != nill %}
+                <div class="class-section class-media">
+                    <h2>Photos</h2>
+                    {% for media_name in page.media %}
+                        <img src="/assets/images/events/{{ page.event-date }}/{{ media_name }}.jpg" width="320" alt="{{ page.title }} photo" />
+                    {% endfor %}
+                </div>
+                {% endif %}
+
             </div>
         </div>
     </div>

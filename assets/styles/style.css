@@ -18,8 +18,6 @@ body {
 .social-menu > li {
     display: inline-block;
     margin-left: 5px;
-    zoom: 1;
-    *display: inline;
 }
 
 .btn-social {
@@ -29,6 +27,7 @@ body {
 .btn-social {
     display: block;
     text-indent: -9999px;
+    direction: ltr;
 }
 
 .btn-social-facebook {
@@ -81,8 +80,6 @@ body {
 .header-menu > li {
     display: inline-block;
     margin-left: 10px;
-    zoom: 1;
-    *display: inline;
 }
 
 .header-menu > li > a {
@@ -119,12 +116,12 @@ body {
     height: 99px;
     background: url(../images/logo.png) no-repeat 0 0;
     text-indent: -9999px;
+    direction: ltr;
     cursor: pointer;
 }
 
 .logo:hover {
-    opacity: 0.6;
-    /*background-image: url(../images/logo-hover.png);*/
+    background-image: url(../images/logo-hover.png);
 }
 
 
@@ -160,14 +157,20 @@ body {
 
 .sidebar {
     float: left;
-    width: 300px;
+    width: 250px;
 }
 
 .main-content {
     float: left;
-    width: 600px;
+    width: 700px;
     font-weight: normal;
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.main-content h2 {
+    font-family: Georgia;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .main-content li,
@@ -183,11 +186,11 @@ body {
 }
 
 .title {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     color: #008086;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
 }
 
@@ -209,10 +212,6 @@ body {
 
 .content-footer-links > li {
     display: inline-block;
-    zoom: 1;
-    *display: inline;
-
-
 }
 
 .footer {
@@ -259,15 +258,15 @@ body {
 
 .btn-cta-small {
     margin: 0 10px 10px 0;
-    padding: 20px;
-    width: 145px;
+    padding: 10px;
+    width: 165px;
     height: auto;
     font-size: 18px;
     line-height: 1.5;
 }
 
 .btn-cta-small .byline {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
@@ -304,7 +303,7 @@ body {
     margin-left: 431px;
     width: 182px;
     height: 130px;
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 .cloud2 {
@@ -312,7 +311,7 @@ body {
     margin-left: 103px;
     width: 59px;
     height: 42px;
-    background-position: -192px 0px;
+    background-position: -192px 0;
 }
 
 .cloud3 {
@@ -320,7 +319,7 @@ body {
     margin-left: 379px;
     width: 35px;
     height: 32px;
-    background-position: -261px 0px;
+    background-position: -261px 0;
 }
 
 .cloud4 {
@@ -328,7 +327,7 @@ body {
     margin-left: 725px;
     width: 81px;
     height: 57px;
-    background-position: -306px 0px;
+    background-position: -306px 0;
 }
 
 .cloud5 {
@@ -336,7 +335,7 @@ body {
     margin-left: 965px;
     width: 99px;
     height: 68px;
-    background-position: -397px 0px;
+    background-position: -397px 0;
 }
 
 .cloud6 {
@@ -344,7 +343,7 @@ body {
     margin-left: 1190px;
     width: 21px;
     height: 19px;
-    background-position: -506px 0px;
+    background-position: -506px 0;
 }
 
 
@@ -363,6 +362,120 @@ body {
 .main-content .post h2 {
     margin-bottom: 0.5em;
     font-size: 1.2em;
+}
+
+/* Mentors */
+.mentor {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.mentor-img {
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    display: block;
+    float: left;
+    border: 5px solid black;
+}
+
+.mentor-content {
+    width: 400px;
+    float: left;
+}
+
+.mentor-name {
+    margin-bottom: 5px;
+    color: #191919;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1;
+    font-family: Georgia;
+}
+
+.mentor-role {
+    font-family: Georgia;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mentor-content p {
+    /*text-align: justify;*/
+}
+
+.mentors-class {
+    clear: left;
+    overflow: hidden;
+}
+
+.mentors-class .mentor {
+    clear: none;
+    float: left;
+}
+
+.mentors-class .mentor img {
+    float: none;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.mentors-class .name {
+    font-size: 20px;
+}
+
+/* Class Page */
+
+.class-section {
+    margin-bottom: 20px;
+    /*border-left: 5px solid green;*/
+    /*padding-left: 10px;*/
+}
+
+.class-description.drop-caps p:first-child:first-letter {
+    color: #000;
+}
+
+.class-student-count {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.class-title {
+    font-family: Georgia;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.class h2 {
+    font-family: Georgia;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Helpers */
+.drop-caps p:first-child:first-letter {
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: Georgia;
+}
+
+.3d {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+/* IE fixes */
+.social-menu > li,
+.header-menu > li,
+.content-footer-links > li {
+    zoom: 1;
+    *display: inline;
 }
 
 /* Form */
