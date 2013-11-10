@@ -429,6 +429,7 @@ a:hover {
     height: 200px;
     margin-right: 10px;
     margin-bottom: 10px;
+    border: 2px solid black;
 }
 
 .mentors-class .name {
