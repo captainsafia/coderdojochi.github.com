@@ -486,7 +486,7 @@ a:hover {
 .classlist .classlist-title {
     float: left;
     font-size: 20px;
-    
+    line-height: 1.15;
 }
 
 

@@ -5,11 +5,17 @@ title: "CoderDojoChi Classes"
 
 <h2 class="title">Upcoming Classes</h2>
 <div class="classlist">
+{% if site.data.classes.upcoming == nill %}
+    <div class="class">
+        <div class="classlist-title">More classes will be announced soon! Be sure to sign up for the <a href="/parents/">parents' mailing list</a> to be notified.</div>
+    </div>
+{% else %}
 {% for class in site.data.classes.upcoming %}
     <div class="class">
         <div class="classlist-datetime"><a href="/classes/{{ class.date }}" rel="bookmark" title="{{ post.title }}">{{ class.date | date: "%B %d, %Y" }}</a></div>
     </div>
 {% endfor %}
+{% endif %}
 </div>
 
 
