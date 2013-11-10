@@ -3,11 +3,21 @@ layout: page
 title: "CoderDojoChi Classes"
 ---
 
-<h1 class="class-title">Choose one of the following classes</h1>
-
-{% for post in site.posts %}
-    <div class="post">
-        <div class="datetime">{{ post.event-date | date: "%B %d, %Y" }}</div>
-        <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+<h2 class="title">Upcoming Classes</h2>
+<div class="classlist">
+{% for class in site.data.classes.upcoming %}
+    <div class="class">
+        <div class="classlist-datetime"><a href="/classes/{{ class.date }}" rel="bookmark" title="{{ post.title }}">{{ class.date | date: "%B %d, %Y" }}</a></div>
     </div>
 {% endfor %}
+</div>
+
+
+<h2 class="title">Past Classes</h2>
+<div class="classlist">
+{% for class in site.data.classes.past %}
+    <div class="class">
+        <div class="classlist-datetime"><a href="/classes/{{ class.date }}" rel="bookmark" title="{{ post.title }}">{{ class.date | date: "%B %d, %Y" }}</a></div>
+    </div>
+{% endfor %}
+</div>

@@ -3,6 +3,15 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+a {
+    color: #87C448;
+    text-decoration: none;
+}
+
+a:hover {
+    /* color: #008086; */
+}
+
 .wrapper {
     margin: 0 auto;
     width: 960px;
@@ -167,11 +176,11 @@ body {
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.main-content h2 {
+/*.main-content h2 {
     font-family: Georgia;
     font-size: 40px;
     margin-bottom: 20px;
-}
+}*/
 
 .main-content li,
 .main-content p {
@@ -271,8 +280,9 @@ body {
 
 
 .btn-cta:hover {
-    /*background: url(../images/btn-bg-hover.jpg);*/
+    background: url(../images/btn-bg-hover.jpg);
     border: 8px solid #FFF;
+    color: #FFF;
 }
 
 
@@ -452,6 +462,30 @@ body {
     font-family: Georgia;
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+/* Class List */
+.classlist {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.classlist .class {
+    clear: left;
+    overflow: hidden;
+}
+.classlist .classlist-datetime {
+    width: 200px;
+    float: left;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.classlist .classlist-title {
+    float: left;
+    font-size: 20px;
+    
 }
 
 
