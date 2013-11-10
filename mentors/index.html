@@ -7,7 +7,7 @@ title: "CoderDojoChi Mentors"
 {% for mentor_data in site.data.mentors %}
     {% assign key = mentor_data[0] %}
     {% assign mentor = mentor_data[1] %}
-    <div class="mentor">
+    <div class="mentor" id="{{key}}">
         <img src="/assets/images/bios/{% if key %}{{ key }}.jpg{% else %}default.png{% endif %}" class="mentor-img" width="400" alt="{{ mentor.name }}'s picture" />
         <div class="mentor-content">
             <h3 class="mentor-name">{{ mentor.name }}</h3>
