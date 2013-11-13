@@ -1,10 +1,10 @@
 ---
 layout: event
 title: "Choose Your Own Adventure Game"
-event-date: 2013-11-16
-eventbrite: 9261847435
-teacher: bkellgren
-mentors: [dkam, narnold, ssuh]
+event-date: 2014-02-01
+eventbrite: 9323686397
+teacher: akarbassi
+# mentors: [dkam, narnold, ssuh]
 # students:
 # media: []
 ---
