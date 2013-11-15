@@ -4,8 +4,8 @@
   url: /about/
 - text: Parents
   url: /parents/
-- text: Mentors
-  url: /mentors/
+# - text: Mentors
+  # url: /mentors/
 - text: Classes
   url: /classes/
 - text: Volunteer
