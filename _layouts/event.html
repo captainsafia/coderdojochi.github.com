@@ -27,7 +27,7 @@
                     <div class="mentors-class">
                         <div class="mentor">
                             <img src="/assets/images/bios/{{ page.teacher }}.jpg" width="200" alt="{{ mentor.name }} picture" />
-                            <h3 class="name"><a href="/mentors/#{{page.teacher}}">{{ mentor.name }}</a></h3>
+                            <h3 class="name"><a href="/about/#{{page.teacher}}">{{ mentor.name }}</a></h3>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         {% assign mentor = site.data.mentors[mentor_key] %}
                         <div class="mentor">
                             <img src="/assets/images/bios/{{ mentor_key }}.jpg" width="200" alt="{{ mentor.name }} picture" />
-                            <h3 class="name"><a href="/mentors/#{{mentor_key}}">{{ mentor.name }}</a></h3>
+                            <h3 class="name"><a href="/about/#{{mentor_key}}">{{ mentor.name }}</a></h3>
                         </div>
                     {% endfor %}
                     </div>
