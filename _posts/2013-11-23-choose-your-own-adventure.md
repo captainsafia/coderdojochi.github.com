@@ -4,7 +4,7 @@ title: "Choose Your Own Adventure Game"
 event-date: 2013-11-23
 eventbrite: 9261847435
 teacher: akarbassi
-# mentors: [dkam, narnold, ssuh]
+mentors: [bkellgren, alurie, ngreen, diba, pevans]
 # students:
 # media: []
 ---
