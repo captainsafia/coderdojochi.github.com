@@ -6,7 +6,7 @@
             </div>
 
             <div class="main-content class">
-                <h1 class="class-title">{{ page.title }} <small>{{ page.event-date }}</small></h1>
+                <h1 class="class-title">{{ page.title }} <small>{{ page.event-date | date: "%B %d, %Y" }}</small></h1>
 
                 <div class="class-section class-description drop-caps">
                     {{ content }}

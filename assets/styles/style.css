@@ -459,6 +459,7 @@ a:hover {
 .class-title small {
     color: #86C447;
     display: block;
+    font-size: 30px;
 }
 
 .class h2 {
