@@ -456,6 +456,11 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.class-title small {
+    color: #86C447;
+    display: block;
+}
+
 .class h2 {
     font-family: Georgia;
     font-size: 30px;
