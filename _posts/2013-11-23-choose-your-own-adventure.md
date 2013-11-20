@@ -2,6 +2,7 @@
 layout: event
 title: "Choose Your Own Adventure Game"
 event-date: 2013-11-23
+location: SapientNitro, 30 West Monroe St, Floor 12, Chicago, IL 60603
 eventbrite: 9261847435
 teacher: akarbassi
 mentors: [bkellgren, alurie, ngreen, diba, pevans]

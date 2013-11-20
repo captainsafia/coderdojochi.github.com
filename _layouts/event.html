@@ -6,10 +6,29 @@
             </div>
 
             <div class="main-content class">
-                <h1 class="class-title">{{ page.title }} <small>{{ page.event-date | date: "%B %d, %Y" }}</small></h1>
+                <h1 class="class-title">{{ page.title }}</h1>
 
                 <div class="class-section class-description drop-caps">
                     {{ content }}
+                </div>
+
+                <div class="class-section class-information">
+                    <h2>Class Information</h2>
+                    <div class="col">
+                        <h3>When:</h3>
+                        <p>{{ page.event-date | date: "%B %d, %Y" }} from 10am to 1pm</p>
+
+                        <h3>Where:</h3>
+                        <p>{{ page.location }}</p>
+
+                        <h3>Who:</h3>
+                        <p>Anyone between 7 and 17 of age. No computer skills required!</p>
+                    </div>
+                    <div class="col map">
+                        <a href="http://maps.google.com/maps?q={{ page.location }}" title="Get directions." class="map-link">
+                            <img src="http://maps.google.com/maps/api/staticmap?markers=location:+{{ page.location }}&size=200x200&sensor=false" width="200" height="200">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="class-section class-signup">

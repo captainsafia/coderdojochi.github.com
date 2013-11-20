@@ -1,7 +1,8 @@
 ---
 layout: event
-title: "Barry Elementry: Choose Your Own Adventure Game"
+title: "Barry Elementary: Choose Your Own Adventure Game"
 event-date: 2013-06-08
+location: Barry Elementary, 2828 N Kilbourn Ave, Chicago, IL
 eventbrite: 7175107941
 students: 30
 teacher: alurie

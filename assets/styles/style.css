@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-    /* color: #008086; */
+    color: #008086;
 }
 
 .wrapper {
@@ -443,6 +443,36 @@ a:hover {
 
 .class-description.drop-caps p:first-child:first-letter {
     color: #000;
+}
+
+.class-information {
+    overflow: hidden;
+}
+
+.class-information .col {
+    float: left;
+    width: 480px;
+}
+
+.class-information .map {
+    float: right;
+    width: 202px;
+}
+
+.class-information .map-link {
+    display: block;
+}
+
+.class-information .map-link img {
+    border: 1px solid #87C448;
+}
+
+.class-information .map-link:hover img {
+    border: 1px solid #008086;
+}
+
+.class-information h3 {
+    font-weight: bold;
 }
 
 .class-student-count {
