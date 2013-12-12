@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+    <meta property="og:image" content="http://coderdojochi.org/assets/images/logo.png" />
+    <meta property="og:title" content="{% if page.event-date %}CoderDojoChi Class: {{ page.title }}{% else %}{{ page.title }}{% endif %}" />
     <title>{% if page.event-date %}CoderDojoChi Class: {{ page.title }}{% else %}{{ page.title }}{% endif %}</title>
     <link rel="stylesheet" href="/assets/styles/reset.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
