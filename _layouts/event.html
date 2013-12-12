@@ -61,10 +61,12 @@
                     <div class="mentors-class">
                     {% for mentor_key in page.mentors %}
                         {% assign mentor = site.data.mentors[mentor_key] %}
+                        {% if mentor != nill %}
                         <div class="mentor">
                             <img src="/assets/images/bios/{{ mentor_key }}.jpg" width="200" alt="{{ mentor.name }} picture" />
                             <h3 class="name"><a href="/about/#{{mentor_key}}">{{ mentor.name }}</a></h3>
                         </div>
+                        {% endif %}
                     {% endfor %}
                     </div>
                 </div>
