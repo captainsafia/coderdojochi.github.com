@@ -6,7 +6,7 @@ location: SapientNitro, 30 West Monroe St, Floor 12, Chicago, IL 60603
 eventbrite: 9323660319
 teacher: akarbassi
 mentors: [dkam, bkellgren, diba, ngreen, khansen, hlo]
-# students:
+students: 20
 # media: []
 ---
 
