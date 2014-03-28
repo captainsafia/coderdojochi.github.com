@@ -522,6 +522,13 @@ a:hover {
     line-height: 1.15;
 }
 
+/* FAQs */
+
+.faqs h2 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.125em;
+}
 
 /* Helpers */
 .drop-caps p:first-child:first-letter {
